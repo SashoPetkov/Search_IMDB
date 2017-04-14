@@ -1,0 +1,175 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+input {
+  border: none;
+  outline: none;
+}
+#wrapper > div > h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 4rem;
+  text-align: center;
+  color: #626D71;
+}
+#wrapper {
+  background-color: #CDCDC0;
+  padding-bottom: 1rem;
+}
+.mainSearch {
+  background-color: #626D71;
+  text-align: center;
+  padding: 20px 0;
+}
+.mainSearch label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 1.4rem;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 15px;
+  color: #B38867;
+}
+.mainSearch section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+}
+.mainSearch section input[type="submit"],
+.mainSearch section input[type="text"] {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+}
+.mainSearch section label {
+  display: inline-block;
+  line-height: 2rem;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 0;
+  color: #B38867;
+}
+.mainSearch section input[type="text"] {
+  height: 2rem;
+  width: 20rem;
+  border: 1px solid #B38867;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+}
+.mainSearch section input[type="text"]:focus {
+  box-shadow: inset 0 0 10px #B38867;
+}
+.mainSearch section input[type="submit"] {
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #B38867;
+  border-left: none;
+}
+.mainSearch select {
+  height: 1.5rem;
+  width: 7rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: lighter;
+  border: 1px solid #B38867;
+  margin: 15px 0;
+  border-radius: 0 8px 0 8px;
+  outline: none;
+  -webkit-appearance: none;
+  letter-spacing: 1px;
+  padding-left: 2rem;
+}
+.mainSearch select option {
+  text-align: center;
+}
+.list-items {
+  background-color: #DDBC95;
+  padding: 0.5rem;
+  margin: 1rem;
+  justify-content: center;
+  flex-direction: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+.list-items section {
+  max-width: 700px;
+  margin: 0 2rem;
+}
+.list-items img {
+  height: 9.4rem;
+  width: auto;
+  min-width: 6.3rem;
+}
+.list-items h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0.5rem 0;
+}
+.list-items p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.2rem;
+}
+.list-items h5 {
+  margin: 0.5rem 0;
+}
+.list-items-insideList {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.list-items-insideList p {
+  max-width: 150px;
+}
+.click-send {
+  box-shadow: inset 0 0 10px #fffff2;
+  color: #B38867;
+}
+@media screen and (max-width: 498px) {
+  .mainSearch section {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .list-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .list section {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 385px) {
+  .mainSearch section {
+    flex-wrap: nowrap;
+  }
+  .mainSearch section label {
+    display: none;
+  }
+}
